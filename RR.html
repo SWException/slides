@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>RR | SWException</title>
+
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\n\n"
+        data-background-image="imgs/sfondo.png" data-separator-notes="^Note:">
+        <textarea data-template>
+
+# SWException
+
+### Corso di Ingegneria del Software - UniPD
+
+A.A. 2020/2021
+
+Laurea triennale in informatica
+
+Revisione dei requisiti - 18 Gennaio 2021
+
+---
+
+## Capitolato scelto
+
+
+C2 - EmporioLambda: piattaforma di e-commerce in stile serverless
+
+Proponente: RedBabel
+
+	        </textarea>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <link rel="stylesheet" href="plugin/highlight/zenburn.css">
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      slideNumber: 'c/t',
+      showSlideNumber: 'all'
+    });
+  </script>
+</body>
+
+</html>
