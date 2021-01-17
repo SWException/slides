@@ -14,9 +14,3 @@ Raccolta slide prodotte con reveal.js per le revisioni di avanzamento
 - all'inizio di un argomento si usa h1 sulla slide del titolo, poi h2 (no intestazioni di livello più alto)
 - per i link usare il tag "a" di html
 - per le immagini usare il tag "img" di html
-
-Esempio:
-
-<a href="https://hastebin.com/vozayuguyi.yaml">Codice</a>
-
-<a href="https://micheleveronesi.github.io/TOS-assignment3/">Slide</a>
