@@ -28,60 +28,111 @@
 
 # SWException
 
-## <em>Technology Baseline  - Data</em>
+### Corso di Ingegneria del Software
+
+Università degli Studi di Padova
+
+A.A. 2020/2021
+
+Laurea triennale in informatica
+
+<em>Technology Baseline  - 01/03/2021</em>
 
 ---
 
-## Immagine schema struttura 
+## Tecnologie comuni tra i micro servizi
+
+
+### Framework serverless
+
+Il principale strumento adottato per lo sviluppo di EmporioLambda è il framework serverless nella versione open-source.
+
+Questo facilita di molto la definizione delle API dei vari micro servizi e il deploy di questi nell'infrastruttura cloud di AWS.
+
+
+### Linguaggio typescript
+
+Il linguaggio di programmazione adottato per tutte le parti dell'applicazione è TypeScript.
+
+Questo, rispetto a JavaScript, offre un controllo sui tipi in fase di compilazione (quindi come controllo statico).
+
+
+### AWS Lambda
+
+Il servizio AWS Lambda serve a realizzare l'architettura in stile serverless che gestisce il funzionamento dell'applicazione con
+chiamate asincrone alle funzioni esposte.
+
+Inoltre il costo fatturato viene calcolato in base al tempo di esecuzione di queste funzioni.
+
+
+### API Gateway
+
+È il servizio di AWS che permette il collegamento tra le API esposte.
+<!-- TODO -->
 
 ---
 
-# Linguaggi, tecnologie e strumenti 
+## Frontend (EML-FE)
+
+<img src="imgs/tb/nextjs.png" width="200em"/>
 
 
-## Frontend
-  <img src="imgs/tb/React.png" width="350em">
-  <img src="imgs/tb/nextjs.png" width="350em">
+Il framework utilizzato per il front end è next.js
 
+In particolare, è ben integrato con TypeScript
 
-### Backend
-  <img src="imgs/tb/DynamoDB.png" width="200em">
-  <img src="imgs/tb/aws lambda.jfif" width="200em">
-  <img src="imgs/tb/Typescript.png" width="200em">
-  <img src="imgs/tb/Cognito.jpg" width="200em">
-  <img src="imgs/tb/stripe.png" width="200em">
+<!-- TODO: inserire motivazioni scelta tecnologie front end -->
 
 ---
 
-# Cosa abbiamo realizzato
-  - Implementazione del login e logout
-  - Visualizzazione di un carrello pre impostato
-  - Checkout 
-Note: dopo di questo passiamo a mostare il poc che abbiamo realizzato, prima funzionamento e poi le parti realizzare
+## Backend (EML-BE)
+
+<img src="imgs/tb/DynamoDB.png" width="200em"/>
+<img src="imgs/tb/Cognito.jpg" width="200em"/>
+<img src="imgs/tb/stripe.png" width="200em"/>
 
 
-## Demo 
-   Inserimento link 
+### DynamoDB
+
+Questo tipo di database è stato scelto in quanto si integra perfettamente con gli altri servizi AWS.
+
+Inoltre un DB di tipo NoSQL è più scalabile di uno tradizionale, dunque all'aumentare della mole dei dati
+aumenterà soltanto il prezzo fatturato da Amazon.
+
+
+### Amazon Cognito
+
+La gestione dell'autenticazione e delle credenziali è affidata a Cognito.
+
+Questo è perfettamente integrato con gli altri servizi AWS, offrendo un livello di sicurezza maggiore
+di qualsiasi infrastruttura che potremmo creare noi da zero.
+
+Inoltre il tempo necessario ad implementarlo è stato molto basso.
+
+
+### Stripe
+
+Per la gestione dei pagamenti ci siamo affidati alla piattaforma esterna Stripe.
+
+In questo modo non dovremmo preoccuparci di rispettare gli standard di sicurezza previsti per le piattaforme
+che gestiscono i pagamenti in modo autonomo.
+
+<!-- TODO: inserire motivazioni scelta tecnologie front end -->
 
 ---
 
-# Presentazione lavoro PoC
+##  Cosa abbiamo realizzato
 
 
-## Dynamodb - database carrello
+Nel nostro PoC abbiamo inserito:
 
-
-## API
-
-
-## Cognito - login/logout
-
-
-## Stripe - pagamento
+- gestione dell'autenticazione con Amazon Cognito
+- visualizzazione di un carrello predefinito con fetch dei dati da DynamoDB
+- checkout del carrello con Stripe
 
 ---
 
-# FINE
+## Grazie dell'attenzione!
 
 	        </textarea>
         </section>
