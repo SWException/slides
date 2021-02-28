@@ -101,20 +101,19 @@ Oltre a questo supporta Typescript e fornisce un sistema di routing dinamico bas
 
 ### DynamoDB
 
-Questo tipo di database è stato scelto in quanto si integra perfettamente con gli altri servizi AWS.
+Questo tipo di database è stato scelto in quanto si integra perfettamente con gli altri servizi AWS e si paga solamente in base al suo utilizzo.
 
-Inoltre un DB di tipo NoSQL è più scalabile di uno tradizionale, dunque all'aumentare della mole dei dati
-aumenterà soltanto il prezzo fatturato da Amazon.
+Inoltre è un DB completamente gestito da AWS che offre attraverso una semplice configurazione scalabilità, sicurezza ed elevate prestazioni a qualsiasi scala.
 
 
 ### Amazon Cognito
 
-La gestione dell'autenticazione e delle credenziali è affidata a Cognito.
+La gestione dell'autenticazione e delle credenziali è affidata a Cognito, il quale si occupa anche di inviare le email di verifica e per il recupero password.
 
-Questo è perfettamente integrato con gli altri servizi AWS, offrendo un livello di sicurezza maggiore
-di qualsiasi infrastruttura che potremmo creare noi da zero.
+È perfettamente integrato con gli altri servizi AWS, offrendo un livello di sicurezza maggiore
+di qualsiasi infrastruttura eventualmente creata da noi.
 
-Inoltre il tempo necessario ad implementarlo è stato molto basso.
+Inoltre il tempo necessario ad implementarlo è molto basso.
 
 
 ### Stripe
@@ -123,8 +122,6 @@ Per la gestione dei pagamenti ci siamo affidati alla piattaforma esterna Stripe.
 
 In questo modo non dovremo preoccuparci di rispettare gli standard di sicurezza previsti per le piattaforme
 che gestiscono i pagamenti in modo autonomo.
-
-<!-- TODO: inserire motivazioni scelta tecnologie front end -->
 
 ---
 
