@@ -82,7 +82,7 @@ La struttura dei verbali è rimasta invariata, ma abbiamo riportato solo quelli 
 
 ## Technology Baseline
 
-Nel Poc abbiamo fatto uso di:
+Nel PoC abbiamo fatto uso di:
 - Servizi AWS richiesti
 - Stripe
 - Next.js
@@ -106,9 +106,12 @@ La TB ha portato un risconto positivo da parte del docente Cardin.
 ---
 
 ## Andamento del progetto
+
+Come stiamo lavorando?
 note:
-Durante il periodo successivo all'analisi dei requisiti, ci siamo dedicati all'apprendimento delle tecnologie
-coinvolte.
+- Durante il periodo successivo all'analisi dei requisiti ci siamo dedicati all'apprendimento delle tecnologie coinvolte per poi sviluppare la PoC
+- nel fare questo abbiamo deciso di continuare ad utilizzare un modello di sviluppo incrementale, in quanto crediamo di aver compreso maggiormente 
+il suo funzionamente rispetto a quella che era la nostra percezione alla Revisione dei Requisiti
 
 
 ### Suddivisione del lavoro
@@ -116,40 +119,39 @@ coinvolte.
 - Front-end
 - Back-end
 
-note: Si è effettuata una distinzione netta tra chi ha approfondito le tecnologie per il front-end e chi quelle per il back-end.
+note: La suddivisione del lavoro tra i membri del gruppo è avvenuta principalemente tra front-end e back-end
 
-Questo ha portato molti vantaggi in termini di efficienza.
+Questo ha portato molti vantaggi in termini di efficienza e ci ha permesso di lavorare in parallelo.
 
 
-### Come lavoriamo
+### Come ci siamo organizzati
 
 - Incrementi come da PdP
 
-- Sincronia tra front-end e backend
+- Sincronia tra front-end e back-end
 
 - OpenAPI 3.0
 
 note:
-Attualmente stiamo procedendo con gli incrementi definiti nel Piano di Progetto. Per farlo cerchiamo di attuare una perfetta
-sincronia tra chi si occupa di front-end e chi di back-end, e lo standar OpenAPI 3.0.0 aiuta in questo
+- Stiamo riuscendo ad eseguire gli incrementi come avevamo pianificato nel Piano di Progetto. 
+- e per farlo al meglio serve essere sincronizzati tra chi si occupa di front-end e chi di back-end, in quanto i due ambiti di lavoro sono fortemente legati tra loro
+- L'utilizzo di OpenAPI, come ci è stato consigliato dal proponente, ci aiuta molto in questo.
 
 
 ### OpenAPI 
 
 <img src="imgs/openAPI.png" width="150em"/>
 
-- Definisce i contratti delle API
-- Facile implementazione di un mockup
+- Definire i contratti delle API
 - Parallelismo tra FE e BE
+- Facile implementazione di un mockup
 - Parallelismo nello sviluppo delle API
 
 note:
-Per raggiungere questo obiettivo è stato adottato lo standard openAPI 3.0
-
-OpenAPI permette di definire i contratti delle API che si andranno ad implementare, in questo modo i due team possono lavorare con ampio parallelismo.
-
-Parallelismo che si ottiene anche internamente al team di backend, in quanto lo sviluppo di un API è completamente indipendente dalle altre visto che
-le interfacce sono già state definite.
+- OpenAPI ci permettono di definire i contratti delle API che si andranno poi ad implementare
+- in questo modo i componenti del gruppo che lavorano al front-end possono iniziare a sviluppare anche se l'implementazione delle API necessarie non è ancora terminata
+- questo è reso possibile attraverso una facile e automatica implementazione di un endpoint di mockup delle API a partire dal documento che le definisce.
+- Oltre a ciò si ha anche un parallelismo tra i membri del gruppo che lavorano al backend, in quanto lo sviluppo di un API è completamente indipendente dalle altre e le sue caratteristiche sono già state definite attraverso lo standard OpenAPI
 
 ---
 
