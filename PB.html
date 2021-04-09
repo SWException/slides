@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>TB | SWException</title>
+    <title>PB | SWException</title>
 
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/white.css">
@@ -36,37 +36,100 @@ A.A. 2020/2021
 
 Laurea triennale in informatica
 
-<em>Product Baseline  - 09/04/2021</em>
+<em>Product Baseline - 09/04/2021</em>
 
 
-<img src="imgs/emporio.png" width="500em">
+<img src="imgs/emporio.png" width="500em"/>
 
 Piattaforma di e-commerce in stile serverless
 
 ---
 
-## Backend
-
----
-
-## Microservizi
+# Backend
 
 
-<img src="imgs/pb/microservices.jpg" width="800em">
+## Microservizi <!-- Francesco -->
 
----
+<img src="imgs/pb/microservices.jpg" width="800em"/>
+
+
+## Comunicazioni tra microservizi <!-- Michele -->
+
+<img src="imgs/pb/products.jpg" height="400em"/>
+
+
+<img src="imgs/pb/users.jpg" height="500em"/>
+
+
+## Singolo microservizio <!-- Ivan -->
+
 
 ### Layered architecture
 
-<img src="imgs/pb/layered-architecture.png" width="500em">
+<img src="imgs/pb/layered-architecture.png" width="630em"/>
+
+Note:
+- Presentation: handler, cioè le api. Ritornano una risposta http utilizzando il business Layer
+- Business: è il "core" del microservizio, dove appunto c'è la logica del microservizio
+- Persistence: classi che si interfacciano con il database, altri microservizi dal nostro progetto, servizi esterni (es. stripe)
+
+Architettura semplice da comprendere ed implementare, 
+ci permette comunque di effettuare test di unità sostituendo p.e. le componenti del persistence layer con dei mock.
+
+Questo tipo di architettura è risultata da tutti subito chiara e semplice da applicare, 
+abbiamo evitato di utilizzare architettura esagonale (che abbiamo comunque aprofondito e cercato di usare in un esempio prima di prendere una decisione) 
+in quanto avrebbe portato ad overhead, anche considerando che avevamo già iniziato con un'architettura a layer.
 
 ---
+
+# Mocking <!-- Nicole / Stefano -->
+
 
 ## OpenAPI
 
+<img src="imgs/pb/OpenAPI_Logo.png" width="400em"/>
+
+
+## Swagger Hub
+
+<img src="imgs/pb/SwaggerHub_Logo_Horizontal_Color.png" width="500em"/>
+
 ---
 
-## Frontend
+# Frontend <!-- Gianmarco -->
+<!-- TODO: Bla bla bla -->
+
+
+### Sviluppato con Nextjs
+
+Utilizzate le funzioni build in del framework come:
+- Static & Dynamic Routing
+- Static & ServerSide page rendering
+
+Note: utilizzo struttura React per divisione cartelle 
+
+
+### Gestione del Global State
+
+Redux vs ContexAPI?
+
+
+### ContextAPI
+
+- Funzionalità messa a disposizione da React (>16.8)
+- No dipendenze verso librerie esterne
+
+
+### Services
+
+Unico punto di contatto tra frontend e backend
+
+
+<img src="imgs/pb/EML-FE.jpg" width="700em">
+
+---
+
+# Presentazione codice <!-- Slide che anticipa la presentazione di un po' di codice che abbiamo fatto. Marco e Gianmarco -->
 
 ---
 
